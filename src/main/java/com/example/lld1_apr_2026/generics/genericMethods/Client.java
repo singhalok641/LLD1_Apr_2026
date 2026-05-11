@@ -19,5 +19,9 @@ public class Client {
         // Usage - must explicitly tell java what T is:
         String s = Utility.<String>getDefault(); // T = String
         Integer n = Utility.<Integer>getDefault(); // T = Integer
+
+//        Pair<int, long> pair1 = new Pair<int, long>(1,2);
+
+//        pair1.getFirst();
     }
 }

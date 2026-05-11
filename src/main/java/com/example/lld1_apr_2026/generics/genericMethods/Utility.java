@@ -1,9 +1,7 @@
 package com.example.lld1_apr_2026.generics.genericMethods;
 
-import java.util.HashMap;
-import java.util.Hashtable;
-
-public class Utility {
+public class Utility<T> {
+//    private static T val;
 
     // <T> before the return type declares the T for this method
     public static <T> void printArray(T[] array) {
@@ -12,6 +10,7 @@ public class Utility {
         }
         System.out.println();
     }
+
 
     public static <T> T getFirst(T[] array) {
         if (array == null || array.length == 0) {
