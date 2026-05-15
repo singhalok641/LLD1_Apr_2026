@@ -19,7 +19,9 @@ public class Utility {
     // ? super T -> (Lower Bounded Wildcard)
     //
     public void addDogs(List<? super Dog> list) { // List<Dog>, List<Mammal>, List<Animal>, List<Object>
-        list.add(new Dog()); // safe to add Dogs
+        list.add(new Dog()); // safe to add Dogs\
+//        Dog d = list.getFirst();
+//        d.bark();
     }
 
     // ? super Dog -> some unknown type which is Dog or a parent of Dog
